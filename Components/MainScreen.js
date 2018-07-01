@@ -18,9 +18,7 @@ class MainScreen extends Component{
 
     static navigationOptions = {
 
-      headerLeft: <Icon style={{paddingLeft: 10}} name="ios-camera-outline" />,
-      title: "54Throne",
-      headerRight:<Icon style={{paddingRight: 10}} name="ios-send-outline" />
+      header: null
     }
 
   render(){
