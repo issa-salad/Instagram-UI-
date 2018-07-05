@@ -23,6 +23,18 @@ class ProfileTab extends Component {
       <Icon name="person" style={{ color: tintColor }} />
     )
   }
+  constructor(props) {
+    super(props)
+
+    this.state = {
+      activeIndex: 0
+    }
+  }
+segmentClicked = (index) => {
+    this.setState({
+      activeIndex: index
+    })
+}
 
   render() {
     return (
@@ -72,7 +84,49 @@ class ProfileTab extends Component {
         <Text>🇸🇴| Comdain | Captain S </Text>
         <Text>www.findmeontheinternet.som</Text>
       </View>
+      <View style={{flexDirection: 'row',  justifyContent: 'space-around', borderTopColor: 'grey', borderTopWidth: 1}}>
+        <Button
+          transparent
+          onPress={() => this.segmentClicked(0)}
+          active={this.state.activeIndex == 0}
 
+          >
+          <Icon name="ios-apps-outline"
+              style={[this.state.activeIndex == 0 ? {} :{color: 'grey'}]}
+          />
+        </Button>
+
+        <Button
+           transparent
+           onPress={() => this.segmentClicked(1)}
+           active={this.state.activeIndex == 1}
+
+          >
+          <Icon name="ios-list-outline"
+              style={[this.state.activeIndex == 1 ? {} :{color: 'red'}]}
+           />
+        </Button>
+        <Button
+          transparent
+          onPress={() => this.segmentClicked(2)}
+          active={this.state.activeIndex == 2}
+
+          >
+          <Icon name="ios-people-outline"
+              style={[this.state.activeIndex == 2 ? {} :{color: 'green'}]}
+          />
+        </Button>
+        <Button
+          transparent
+          onPress={() => this.segmentClicked(3)}
+          active={this.state.activeIndex == 3}
+          >
+          <Icon name="ios-bookmark-outline"
+            style={[this.state.activeIndex == 3 ? {} :{color: '#F2994A'}]}
+          />
+        </Button>
+
+      </View>
         </View>
       </Content>
     </Container>
