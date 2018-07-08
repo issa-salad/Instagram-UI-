@@ -90,7 +90,7 @@ class HomeTab extends Component {
         </View>
 
           <CardComponent imagesSource="1"
-            Likes="101"/>
+            likes="101"/>
           <CardComponent imagesSource="1"
             likes="201"/>
           <CardComponent imagesSource="1"

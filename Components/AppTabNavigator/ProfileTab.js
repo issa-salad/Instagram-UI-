@@ -6,13 +6,30 @@ import {
   View,
   Text,
   StyleSheet,
+  Dimensions,
   Image
 } from 'react-native';
 
-import {Icon,Container, Content, Header, Left, Right, Body, Button } from 'native-base'
+import {Icon, Container, Content, Header, Left, Right, Body, Button } from 'native-base'
 
 import EntypoIcon from 'react-native-vector-icons/Entypo'
 
+var images = [
+  require('../../pics/pp1.jpeg'),
+  require('../../pics/pp.jpeg'),
+  require('../../pics/image-1.jpg'),
+  require('../../pics/image-2.jpg'),
+  require('../../pics/image-3.jpg'),
+  require('../../pics/image-4.jpg'),
+  require('../../pics/image.jpg'),
+  require('../../pics/pp.jpeg'),
+  require('../../pics/Los.jpg'),
+  require('../../pics/dub.jpg'),
+  require('../../pics/la.jpg'),
+  require('../../pics/pp1.jpeg')
+]
+
+var {width,height} = Dimensions.get('window')
 class ProfileTab extends Component {
 
   static navigationOptions = {
@@ -30,10 +47,38 @@ class ProfileTab extends Component {
       activeIndex: 0
     }
   }
-segmentClicked = (index) => {
+segmentClicked = ( index ) =>{
     this.setState({
       activeIndex: index
     })
+}
+
+renderSectionOne = () => {
+  return images.map((image,index) => {
+    return(
+      <View key={index} style={[ {width: (width) / 3}, {height: (width) /
+      3 }, {marginBottom: 2},
+        index % 3 !== 0 ? {paddingLeft: 2} : {paddingLeft: 0 }
+
+      ]}>
+      <Image style={{flex: 1, width: undefined, height: undefined}}
+
+          source={image}
+      />
+      </View>
+    )
+  })
+}
+
+renderSection = () => {
+
+  if (this.state.activeIndex == 0) {
+    return(
+      <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
+          {this.renderSectionOne()}
+      </View>
+    )
+  }
 }
 
   render() {
@@ -125,9 +170,12 @@ segmentClicked = (index) => {
             style={[this.state.activeIndex == 3 ? {} :{color: '#F2994A'}]}
           />
         </Button>
+      </View>
+
+        {this.renderSection()}
 
       </View>
-        </View>
+
       </Content>
     </Container>
     );
