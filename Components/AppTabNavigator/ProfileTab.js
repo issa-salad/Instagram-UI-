@@ -13,6 +13,7 @@ import {
 import {Icon, Container, Content, Header, Left, Right, Body, Button } from 'native-base'
 
 import EntypoIcon from 'react-native-vector-icons/Entypo'
+import CardComponent from '../CardComponent'
 
 var images = [
   require('../../pics/pp1.jpeg'),
@@ -77,6 +78,18 @@ renderSection = () => {
       <View style={{flexDirection: 'row', flexWrap: 'wrap'}}>
           {this.renderSectionOne()}
       </View>
+    )
+  }
+  else if (this.state.activeIndex == 1)
+  {
+    return(
+      <View>
+      <CardComponent imageSource="1" likes="100" />
+      <CardComponent imageSource="1" likes="100" />
+      <CardComponent imageSource="1" likes="100" />
+    </View>
+
+
     )
   }
 }
