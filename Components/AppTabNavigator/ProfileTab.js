@@ -15,7 +15,7 @@ import {Icon, Container, Content, Header, Left, Right, Body, Button } from 'nati
 import EntypoIcon from 'react-native-vector-icons/Entypo'
 import CardComponent from '../CardComponent'
 
-var images = [
+let images = [
   require('../../pics/pp1.jpeg'),
   require('../../pics/pp.jpeg'),
   require('../../pics/image-1.jpg'),
@@ -30,7 +30,7 @@ var images = [
   require('../../pics/pp1.jpeg')
 ]
 
-var {width,height} = Dimensions.get('window')
+let {width,height} = Dimensions.get('window')
 class ProfileTab extends Component {
 
   static navigationOptions = {
