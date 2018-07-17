@@ -45,31 +45,31 @@ class SearchTab extends Component {
               }}
               >
               <Thumbnail
-                style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70}}
+                style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10}}
                 source={require('../../pics/pp.jpeg')} />
                 <Thumbnail
-                  style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                  style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                   source={require('../../pics/pp.jpeg')} />
                   <Thumbnail
-                    style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                    style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                     source={require('../../pics/pp.jpeg')} />
                     <Thumbnail
-                      style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                      style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                       source={require('../../pics/pp.jpeg')} />
                       <Thumbnail
-                        style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70}}
+                        style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10}}
                         source={require('../../pics/pp.jpeg')} />
                         <Thumbnail
-                          style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                          style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                           source={require('../../pics/pp.jpeg')} />
                           <Thumbnail
-                            style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                            style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                             source={require('../../pics/pp.jpeg')} />
                             <Thumbnail
-                              style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                              style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                               source={require('../../pics/pp.jpeg')} />
                               <Thumbnail
-                                style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70 }}
+                                style={{ Rectangle: 5, borderColor: 'lightblue', width: 35 * 3, height: 70, margin: 2, borderRadius: 10 }}
                                 source={require('../../pics/pp.jpeg')} />
             </ScrollView>
           </View>
