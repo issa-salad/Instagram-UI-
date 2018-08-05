@@ -9,6 +9,8 @@ import {
 import { Container, Content, Icon, Thumbnail, Header, Left, Right, Body } from 'native-base'
 import CardComponent from '../CardComponent'
 
+
+
 class HomeTab extends Component {
 
   static navigationOptions = {
